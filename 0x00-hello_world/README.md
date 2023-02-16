@@ -3,3 +3,4 @@ compiles a file but does not link
 generates the assembly code
 compiles a c file
 writing a C program
+uses printf
