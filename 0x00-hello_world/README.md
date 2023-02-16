@@ -5,3 +5,4 @@ compiles a c file
 writing a C program
 uses printf
 tests the size of various types
+generates the assembly code
