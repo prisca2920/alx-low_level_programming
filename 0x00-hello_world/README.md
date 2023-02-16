@@ -6,3 +6,4 @@ writing a C program
 uses printf
 tests the size of various types
 generates the assembly code
+sends to std error
