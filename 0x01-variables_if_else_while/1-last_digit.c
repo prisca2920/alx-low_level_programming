@@ -3,29 +3,31 @@
 #include <time.h>
 
 /**
- * main - the entry point
+ * main - Entry point
  *
- * Return: 0(success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
 	int n;
-	int last;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (last > 5)
+
+	if (n > 5)
 	{
-		printf("last digit of %i is %i and is greater than 5\n", n, last);
+		printf("last digit of n is %d and  is greater than 5\n", n);
 	}
-	else if (last == 0)
+
+	else if (n == 0)
 	{
-		printf("last digit of %i is %i and is 0\n", n, last);
+		printf("last digit of n is %d and is 0\n", n);
 	}
-	else if (last < 6)
+
+	else
 	{
-		printf("last digit of %i is %i and is less than 6 and not 0\n", n, last);
+		printf("last digit of n is %d and is less than 6 and not 0\n", n);
 	}
 	return (0);
 }
