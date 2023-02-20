@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int c, i, d;
+	int c, i, d, count = 0;
 
 	for (c = 0; c <= 7; c++)
 	{
@@ -17,18 +17,19 @@ int main(void)
 		{
 			for (d = i + 1; d <= 9; d++)
 			{
-				putchar(c + '0');
-				putchar(i + '0');
-				putchar(d + '0');
-
-				if
-					(c < 8 || i < 7 || d < 9)
+				if (count > 0)
 				{
 					putchar(',');
 					putchar(' ');
 				}
+
+				putchar(c + '0');
+				putchar(i + '0');
+				putchar(d + '0');
+				count++;
 			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
