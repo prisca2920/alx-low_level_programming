@@ -20,7 +20,7 @@ int main(void)
 
 	for (i = 0; i < 49; i++)
 	{
-	printf("%d, ", fib[i]);
+	printf("%d, \n", fib[i]);
 	}
 
 	printf("%d\n", fib[49]);
