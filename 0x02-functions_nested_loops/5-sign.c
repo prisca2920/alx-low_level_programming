@@ -2,9 +2,11 @@
 
 /**
  * print_sign - prints the sign of a number
- * @n the character to be checked
- * Returns: 1 (positive), 0 (else) or -1 (negative)
+ * @n: The input number to check
+ * Return: int
  */
+
+
 
 int print_sign(int n)
 {
