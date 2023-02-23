@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /**
  * _isupper - checks for uppercase letters
@@ -8,7 +8,7 @@ include "main.h"
 
 int _isupper(int c)
 {
-	if ((c = 'A + '0'') && (c = 'Z + '0''))
+	if ((c >= 65) && (c <= 65))
 	{
 		return (1);
 	}
