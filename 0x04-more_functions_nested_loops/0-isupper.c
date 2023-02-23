@@ -8,7 +8,7 @@ include "main.h"
 
 int _isupper(int c)
 {
-	if ((c = 65) && (c = 74))
+	if ((c = 'A + '0'') && (c = 'Z + '0''))
 	{
 		return (1);
 	}
