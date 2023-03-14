@@ -10,26 +10,26 @@
 char *_strdup(char *str)
 {
 	char *str_twin;
-	unsigned int i, j;
+	int i, j;
 
 	if (str == NULL)
 	return (NULL);
 
-	i = 0;
+	for (i = 0; str[i]; i++)
+		j++;
 
-	while (str[i] != '\0')
-		i++;
-
-	str_twin = malloc(sizeof(char) * (i + 1));
+	str_twin = malloc(sizeof(char) * (j + 1));
 
 	if (str_twin == NULL)
 
 	return (NULL);
 
 
-	for (j = 0; j <= i; j++)
-
-	str_twin[i] = str[i];
+	for (i = 0; str[i]; i++)
+	{
+		str_twin[i] = str[i];
+	}
+	str_twin[j] = '\0';
 
 	return (str_twin);
 }
