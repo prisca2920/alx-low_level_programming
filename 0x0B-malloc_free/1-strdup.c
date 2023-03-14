@@ -8,3 +8,29 @@
  */
 
 char *_strdup(char *str)
+{
+	char *str_twin;
+	unsigned int i, j;
+
+	if (str == NULL)
+	return (NULL);
+
+	i = 0;
+
+	while (str[i] != '\0')
+		i++;
+
+	str_twin = malloc(sizeof(char) * (i + 1));
+
+	if (str_twin == NULL)
+
+	return (NULL);
+
+
+	for (j = 0; j <= i; j++)
+
+	str_twin[i] = str[i];
+
+	return (str_twin);
+}
+
