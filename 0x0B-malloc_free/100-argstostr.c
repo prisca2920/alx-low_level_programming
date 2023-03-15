@@ -1,4 +1,23 @@
 #include "main.h"
+#include <stddef.h>
+#include <stdlib.h>
+
+/**
+*len - returns length of str
+*@str: string counted
+*Return: returns the length
+*/
+int len(char *str)
+{
+                int len = 0;
+
+                if (str != NULL)
+                {
+                        while (str[len])
+                                len++;
+                }
+        return (len);
+}
 
 /**
  * argstostr - concatenates all the arguments of your program
@@ -9,8 +28,8 @@
 
 char *argstostr(int ac, char **av)
 {
-	har *new_string = NULL;
-		int k = 0, i = ac, j, sum = 0, temp = 0;
+	char *new_string = NULL;
+	int k = 0, i = ac, j, sum = 0, temp = 0;
 
 		if (ac == 0 || av == NULL)
 			return (NULL);
@@ -36,21 +55,4 @@ char *argstostr(int ac, char **av)
 			return (NULL);
 		}
 		return (new_string);
-}
-
-/**
-*len - returns length of str
-*@str: string counted
-*Return: returns the length
-*/
-int len(char *str)
-{
-		int len = 0;
-
-		if (str != NULL)
-		{
-			while (str[len])
-				len++;
-		}
-	return (len);
 }
