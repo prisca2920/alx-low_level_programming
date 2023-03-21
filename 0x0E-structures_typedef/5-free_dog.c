@@ -3,7 +3,7 @@
 #include "dog.h"
 
 /**
- * free dog - frees memory allocated to dog
+ * free_dog - frees memory allocated to dog
  * @d: character to be checked
  * Return: 0 success
  */
