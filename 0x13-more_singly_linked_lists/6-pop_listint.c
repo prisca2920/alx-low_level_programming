@@ -2,7 +2,7 @@
 
 /**
  * pop_listint - deletes the head node
- * @head parameter to be checked
+ * @head: char to be checked
  * Return: 0 or an int
  */
 
@@ -16,13 +16,10 @@ int pop_listint(listint_t **head)
 		return (0);
 	}
 
-	else
-	{
-	n = (*head)->n;	
+	n = (*head)->n;
 	temp = *head;
 	*head = (*head)->next;
 	free(temp);
-	}
 
 	return (n);
 }
