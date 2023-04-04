@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_listint - prints all the elements 
+ * print_listint - prints all the elements
  * @h: character to be checked
  * Return: the number of nodes
  */
