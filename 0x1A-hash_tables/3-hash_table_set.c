@@ -10,22 +10,22 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_table_t *temp;
+	hash_node_t *temp;
 	unsigned long int i;
 
 	if (ht == NULL || key == NULL || *key == '\0')
 	{
-		return (NULL);
+		return (0);
 	}
 
-	*temp = malloc(sizeof(hash_table_t));
+	temp = malloc(sizeof(hash_node_t));
 
 	if (temp == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 
-	i = hash_djb2(*key % ht->size);
+	i = hash_djb2((const unsigned char *)key) % ht->size;
 
 	temp->key = strdup(key);
 	temp->value = strdup(value);
