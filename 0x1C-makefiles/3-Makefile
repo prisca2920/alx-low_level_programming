@@ -14,12 +14,12 @@ ${NAME}: ${OBJ}
 all: ${NAME}
 
 clean:
-	${RM} ${OBJ} ${SRC}
+	${RM} *~ ${NAME}
 
 oclean:
 	${RM} ${OBJ}
 
 fclean: 
-	${RM} ${NAME} ${OBJ} ${SRC}
+	${RM} *~ ${NAME} ${OBJ}
 
-re: fclean all
+re: oclean all
