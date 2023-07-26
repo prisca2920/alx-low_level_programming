@@ -9,7 +9,7 @@ NAME = school
 RM = clean
 
 ${NAME}: ${OBJ}
-	${CC} $^ -o $@
+	${CC} ${OBJ} -o $@
 
 all: ${NAME}
 
