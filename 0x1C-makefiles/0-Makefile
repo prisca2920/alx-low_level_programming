@@ -1,8 +1,7 @@
 school: main.c school.c
 	gcc main.c school.c -o school
 
-main.o: main.c
-	gcc -o main.o
+all: school
 
-school.o: school.c
-	gcc -o school.o
+clean:
+	rm -f school
