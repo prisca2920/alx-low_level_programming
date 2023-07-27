@@ -8,10 +8,8 @@ NAME = school
 
 RM = rm -f
 
-${NAME}: ${OBJ}
-	${CC} ${OBJ} -o $@
-
-all: ${NAME}
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
 
 clean:
 	${RM} *~ ${NAME}
@@ -22,4 +20,4 @@ oclean:
 fclean: 
 	${RM} *~ ${NAME} ${OBJ}
 
-re: oclean all
+re: fclean all
