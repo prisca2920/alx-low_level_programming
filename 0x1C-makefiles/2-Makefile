@@ -6,10 +6,8 @@ OBJ = ${SRC: .c = .o}
 
 NAME = school
 
-${NAME}: ${OBJ}
-	${CC} ${OBJ} -o $@
-
-all: ${NAME}
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
 
 clean:
 	rm -f ${NAME} ${OBJ}
