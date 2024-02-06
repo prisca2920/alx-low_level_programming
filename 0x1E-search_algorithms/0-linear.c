@@ -10,22 +10,22 @@
 
 int linear_search(int *array, size_t size, int value)
 {
-	int i;
+	size_t i;
 
 	if (array == NULL)
 	{
 	return (-1);
 	}
 
-	for (i = 0; i <= size -1; i++)
+	for (i = 0; i <= size - 1; i++)
 	{
-	if (array[i] != value)
+	printf("Value checked array[%lu] = [%i]\n", i, array[i]);
+
+	if (array[i] == value)
 	{
-	printf("Value checked array[%d] = %d",(i, array));
+	return (i);
 	}
-	
-	else if (array[i] == value)
-	{
-	printf("Value checked array[%d] = %d",(i, array));
-	printf("Found %d at index: %d"(value, i));
 	}
+
+	return (-1);
+}
